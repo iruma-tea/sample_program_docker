@@ -20,3 +20,29 @@ docker compose ls
 ```docker
 docker compose stop
 ```
+
+## 作成済みのコンテナを起動する
+```docker
+docker compose start
+```
+
+## コンテナへファイルのコピー
+```docker
+docker compose cp ホストのファイルパス コンテナ名:コンテナ内のファイルパス
+```
+
+## Dockerホストへファイルをコピー
+```docker
+docker compose cp コンテナ名:コンテナ内のファイルパス ホストのファイルパス
+```
+
+## コンテナの削除
+```docker
+docker compose down
+docker compose down --rmi all
+```
+
+## イメージの一覧表示
+```docker
+docker image ls
+```
