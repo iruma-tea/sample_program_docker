@@ -46,3 +46,15 @@ docker compose down --rmi all
 ```docker
 docker image ls
 ```
+
+## コンテナ内でコマンド実行
+docker compose exec コンテナ名 コンテナで実行したいコマンド   
+```docker
+docker compose exec db mariadb --version
+```
+
+## コンテナ内でシェルの立ち上げ
+docker compose exec コンテナ名 /bin/bash
+```docker
+docker compose exec db /bin/bash
+```
