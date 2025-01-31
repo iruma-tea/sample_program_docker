@@ -72,3 +72,12 @@ docker compose up -d --build
 
 ## キャッシュを使わずにイメージのビルド
 docker compose build --no-cache
+
+## ネットワークを一覧表示
+docker network ls
+
+|ネットワーク|概要|
+|:---|:---|
+|bridge|コンテナ間、コンテナ外と通信できるネットワーク|
+|host|Dockerホストのネットワークをそのまま使う|
+|none|コンテナ間、コンテナ外ともに通信できない|
