@@ -58,3 +58,17 @@ docker compose exec コンテナ名 /bin/bash
 ```docker
 docker compose exec db /bin/bash
 ```
+
+## コンテナのログを表示
+docker compose logs コンテナ名
+```docker
+docker compose log web
+```
+
+## イメージのビルド
+docker compose build
+## イメージの再ビルドとコンテナの実行
+docker compose up -d --build
+
+## キャッシュを使わずにイメージのビルド
+docker compose build --no-cache
